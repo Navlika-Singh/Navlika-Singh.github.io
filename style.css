@@ -54,7 +54,7 @@ footer {
 } */
 
 
-/* Global reset */
+/* Global reset
 body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -64,14 +64,14 @@ body {
 }
 
 /* Header */
-header {
+/* header {
   background-color: #463f3a;
   color: #f4f3ee;
   padding: 20px 0;
   text-align: center;
-}
+} */
 
-header h1 {
+/* header h1 {
   margin: 0;
   font-size: 2.2em;
   font-family: "Georgia", serif;
@@ -79,9 +79,9 @@ header h1 {
 
 nav {
   margin-top: 10px;
-}
+} */
 
-nav a {
+/* nav a {
   color: #f4f3ee;
   text-decoration: none;
   margin: 0 15px;
@@ -91,42 +91,42 @@ nav a {
 
 nav a:hover {
   color: #e0afa0;
-}
+} */
 
 /* Main content card */
-.container {
+/* .container {
   max-width: 900px;
   margin: 40px auto;
   background: #fff;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
+} */
 
 /* Headings */
-h2 {
+/* h2 {
   color: #8a817c;
   font-family: "Georgia", serif;
   margin-top: 20px;
-}
+} */
 
 /* Text */
-p {
+/* p {
   font-size: 1.05em;
   text-align: justify;
   color: #463f3a;
-}
+} */
 
 /* Highlights Section */
-.highlights {
+/* .highlights {
   background-color: #f4f3ee;
   padding: 20px;
   margin-top: 30px;
   border-radius: 8px;
   border-left: 5px solid #e0afa0;
-}
+} */
 
-.highlights h2 {
+/* .highlights h2 {
   color: #463f3a;
 }
 
@@ -140,18 +140,18 @@ p {
   padding-left: 1.2em;
   position: relative;
   color: #463f3a;
-}
+} */
 
-.highlights ul li::before {
+/* .highlights ul li::before {
   content: "•";
   color: #e0afa0;
   font-weight: bold;
   position: absolute;
   left: 0;
-}
+} */
 
 /* Footer */
-footer {
+/* footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
@@ -167,10 +167,141 @@ footer {
 .contact-icons a {
   margin: 0 10px;
   font-size: 28px;
-  color: #463f3a; /* main theme color */
+  color: #463f3a; 
+  transition: color 0.3s ease;
+} */
+
+/* .contact-icons a:hover {
+  color: #e0afa0; 
+}  */
+
+
+/* Global reset */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #e0e1dd; /* light background */
+  color: #1b263b; /* main text */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #0d1b2a; /* dark navy */
+  color: #e0e1dd; /* light text */
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-family: "Georgia", serif;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #e0e1dd; /* light text */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #415a77; /* accent color */
+}
+
+/* Main content card */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #1b263b; /* secondary dark */
+  color: #e0e1dd;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h2 {
+  color: #415a77; /* accent for headings */
+  font-family: "Georgia", serif;
+  margin-top: 20px;
+}
+
+/* Text */
+p {
+  font-size: 1.05em;
+  text-align: justify;
+  color: #e0e1dd;
+}
+
+/* Highlights Section */
+.highlights {
+  background-color: #778da9; /* lighter accent background */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  border-left: 5px solid #415a77; /* heading accent */
+  color: #e0e1dd;
+}
+
+.highlights h2 {
+  color: #0d1b2a; /* dark for heading */
+}
+
+.highlights ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.highlights ul li {
+  margin-bottom: 12px;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.highlights ul li::before {
+  content: "•";
+  color: #e0e1dd; /* bullet color */
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #0d1b2a; /* dark navy */
+  color: #e0e1dd;
+  font-size: 0.9em;
+}
+
+/* Contact Icons */
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: #e0e1dd; /* main icon color */
   transition: color 0.3s ease;
 }
 
 .contact-icons a:hover {
-  color: #e0afa0; /* accent color */
+  color: #e0afa0; /* subtle accent hover */
+}
+
+/* Hyperlink styling */
+a {
+  color: inherit;           /* inherit the surrounding text color */
+  text-decoration: underline; /* underline for all links */
+  transition: color 0.3s ease;
 }
