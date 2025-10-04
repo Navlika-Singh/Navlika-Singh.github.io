@@ -176,19 +176,21 @@ nav a:hover {
 }  */
 
 
-/* Global reset */
-body {
+/*
+blue-themed version
+*/
+/* body {
   margin: 0;
   font-family: "Helvetica Neue", Arial, sans-serif;
-  background-color: #e0e1dd; /* light background */
-  color: #1b263b; /* main text */
+  background-color: #e0e1dd; 
+  color: #1b263b;
   line-height: 1.6;
 }
 
-/* Header */
+
 header {
-  background-color: #0d1b2a; /* dark navy */
-  color: #e0e1dd; /* light text */
+  background-color: #0d1b2a; 
+  color: #e0e1dd; 
   padding: 20px 0;
   text-align: center;
 }
@@ -204,7 +206,7 @@ nav {
 }
 
 nav a {
-  color: #e0e1dd; /* light text */
+  color: #e0e1dd; 
   text-decoration: none;
   margin: 0 15px;
   font-weight: 500;
@@ -212,46 +214,46 @@ nav a {
 }
 
 nav a:hover {
-  color: #415a77; /* accent color */
+  color: #415a77; 
 }
 
-/* Main content card */
+
 .container {
   max-width: 900px;
   margin: 40px auto;
-  background: #1b263b; /* secondary dark */
+  background: #1b263b; 
   color: #e0e1dd;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Headings */
+
 h2 {
-  color: #415a77; /* accent for headings */
+  color: #415a77; 
   font-family: "Georgia", serif;
   margin-top: 20px;
 }
 
-/* Text */
+
 p {
   font-size: 1.05em;
   text-align: justify;
   color: #e0e1dd;
 }
 
-/* Highlights Section */
+
 .highlights {
-  background-color: #778da9; /* lighter accent background */
+  background-color: #778da9; 
   padding: 20px;
   margin-top: 30px;
   border-radius: 8px;
-  border-left: 5px solid #415a77; /* heading accent */
+  border-left: 5px solid #415a77; 
   color: #e0e1dd;
 }
 
 .highlights h2 {
-  color: #0d1b2a; /* dark for heading */
+  color: #0d1b2a; 
 }
 
 .highlights ul {
@@ -267,7 +269,141 @@ p {
 
 .highlights ul li::before {
   content: "•";
-  color: #e0e1dd; /* bullet color */
+  color: #e0e1dd; 
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #0d1b2a; 
+  color: #e0e1dd;
+  font-size: 0.9em;
+}
+
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: #e0e1dd; 
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #e0afa0; 
+}
+
+a {
+  color: inherit;           
+  text-decoration: underline; 
+  transition: color 0.3s ease;
+} */
+
+
+/*
+off-white theme
+*/
+/* Global Reset */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-color: #EDEDE9;
+  color: #1B263B;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #D6CCC2;
+  color: #1B263B;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.2em;
+  font-family: "Georgia", serif;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #1B263B;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #415A77;
+}
+
+/* Main Content Card */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #F5EBE0;
+  color: #1B263B;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h2 {
+  color: #415A77;
+  font-family: "Georgia", serif;
+  margin-top: 20px;
+}
+
+/* Text */
+p {
+  font-size: 1.05em;
+  text-align: justify;
+  color: #1B263B;
+}
+
+/* Highlights Section */
+.highlights {
+  background-color: #E3D5CA;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  border-left: 5px solid #415A77;
+  color: #1B263B;
+}
+
+.highlights h2 {
+  color: #1B263B;
+}
+
+.highlights ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.highlights ul li {
+  margin-bottom: 12px;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.highlights ul li::before {
+  content: "•";
+  color: #D5BDAF;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -278,8 +414,8 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
-  background-color: #0d1b2a; /* dark navy */
-  color: #e0e1dd;
+  background-color: #D6CCC2;
+  color: #1B263B;
   font-size: 0.9em;
 }
 
@@ -291,17 +427,10 @@ footer {
 .contact-icons a {
   margin: 0 10px;
   font-size: 28px;
-  color: #e0e1dd; /* main icon color */
+  color: #1B263B;
   transition: color 0.3s ease;
 }
 
 .contact-icons a:hover {
-  color: #e0afa0; /* subtle accent hover */
-}
-
-/* Hyperlink styling */
-a {
-  color: inherit;           /* inherit the surrounding text color */
-  text-decoration: underline; /* underline for all links */
-  transition: color 0.3s ease;
+  color: #415A77;
 }
