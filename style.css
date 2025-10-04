@@ -159,3 +159,18 @@ footer {
   color: #f4f3ee;
   font-size: 0.9em;
 }
+
+.contact-icons {
+  margin-top: 20px;
+}
+
+.contact-icons a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: #463f3a; /* main theme color */
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #e0afa0; /* accent color */
+}
