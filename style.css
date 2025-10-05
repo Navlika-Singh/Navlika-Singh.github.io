@@ -288,14 +288,14 @@ max-width: 900px;
   left: 0;
 }
 
-footer {
+/* footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
   background-color: #0d1b2a; 
   color: #e0e1dd;
   font-size: 0.9em;
-}
+} */
 
 
 .contact-icons {
@@ -318,6 +318,30 @@ a {
   text-decoration: underline; 
   transition: color 0.3s ease;
 }
+
+html, body {
+  height: 100%;       /* make the page full height */
+  margin: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;  /* full viewport height */
+}
+
+.container, .highlights {
+  flex: 1;            /* make content expand to fill space if needed */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0d1b2a;
+  color: #e0e1dd;
+  font-size: 0.9em;
+}
+
 
 
 
