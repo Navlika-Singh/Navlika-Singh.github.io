@@ -106,11 +106,11 @@
   <header>
     <h1 id="main-header">Navlika Singh</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html"><strong>Home</strong></a>
       <!-- <a href="research.html">Research</a> -->
-      <a href="publications.html">Publications</a>
+      <a href="publications.html"><strong>Publications</strong></a>
       <!-- <a href="resume.html">Resume</a> -->
-      <a href="blogs.html">Blogs</a>
+      <a href="blogs.html"><strong>Blogs</strong></a>
     </nav>
   </header>
 </head>
@@ -130,7 +130,7 @@
       I am passionate about a lot of things outside of academics. I am intrigued by the studies of human conciousness, love reading books, and exploring new places. I am also a foodie. 
     </p>
     <p>
-    If you like my work or would like to connect, feel free to reach out — I’m always happy to collaborate or just have a conversation .
+    If you like my work or would like to connect, feel free to reach out. I’m always happy to collaborate or just have a conversation .
     </p>
 
     <!-- Contact Icons -->
@@ -156,6 +156,21 @@
     &copy; 2025 Navlika Singh | Built with GitHub Pages
   </footer>
 
-  <script src="header-animate.js"></script>
+  <!-- JavaScript at the end -->
+  <script>
+    const header = document.getElementById('main-header');
+    const englishName = "Navlika Singh";
+    const hindiName = "नवलिका सिंह";
+
+    header.addEventListener('mouseenter', () => {
+      header.textContent = hindiName;
+      header.style.color = "#e91e63"; // pink
+    });
+
+    header.addEventListener('mouseleave', () => {
+      header.textContent = englishName;
+      header.style.color = ""; // revert to default
+    });
+  </script>
 </body>
 </html>
