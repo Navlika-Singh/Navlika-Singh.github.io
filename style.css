@@ -316,3 +316,36 @@ a {
   transition: color 0.3s ease;
 }
 
+/* Main Header */
+header h1 {
+  margin: 0;
+  font-family: 'Pacifico', cursive; /* stylish, catchy */
+  font-size: 2.5em;
+  position: relative;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effect: change text to Hindi in pink */
+header h1:hover::after {
+  content: "नवलिका सिंह"; /* Hindi name */
+  color: #e91e63; /* pink */
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Subheadings (About Me, News & Highlights) */
+h2 {
+  font-family: 'Merriweather', serif; /* stylish but readable */
+  color: #415A77;
+  margin-top: 20px;
+}
+
+/* Paragraphs / content */
+p, li {
+  font-family: 'Open Sans', sans-serif; /* professional */
+  font-size: 1em;
+  line-height: 1.6;
+  color: #1B263B;
+}
