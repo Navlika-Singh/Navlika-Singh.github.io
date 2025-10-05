@@ -240,15 +240,14 @@ p {
   color: #e0e1dd;
 }
 
-
 .highlights {
   background-color: #778da9; 
   padding: 40px;
   margin-top: 30px;
   border-radius: 8px;
   color: #e0e1dd;
+  text-align: center; /* centers heading and content block */
 }
-
 /* .highlights {
 max-width: 900px;
   margin: 40px auto;
@@ -263,9 +262,16 @@ max-width: 900px;
   color: #0d1b2a; 
 } */
 
+/* .highlights ul {
+  list-style-type: none;
+  padding: 0;
+} */
+
 .highlights ul {
   list-style-type: none;
   padding: 0;
+  display: inline-block; /* make ul shrink to content */
+  text-align: left;     /* keep bullet points readable */
 }
 
 .highlights ul li {
@@ -281,7 +287,6 @@ max-width: 900px;
   position: absolute;
   left: 0;
 }
-
 
 footer {
   text-align: center;
